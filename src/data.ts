@@ -23,8 +23,7 @@ export type ResourceItem = {
 export const basicInfo = {
   name: 'Marissa Abao',
   role: 'Full-Stack Developer',
-  blurb:
-    'Student at Red River College Polytech. Passionate about clean UI, testing, and CI/CD.',
+  blurb: 'Student at Red River College Polytech. Passionate about clean UI, testing, and CI/CD.',
   email: 'mabao@rrc.ca',
   location: 'Winnipeg, MB',
   links: [
@@ -36,8 +35,7 @@ export const basicInfo = {
 export const workItems: WorkItem[] = [
   {
     title: 'UC Component Library (Assignment 13)',
-    description:
-      'React + TypeScript library with Husky pre-commit checks and GitHub Actions CI.',
+    description: 'React + TypeScript library with Husky pre-commit checks and GitHub Actions CI.',
     image: '/logo192.png',
     link: 'https://github.com/mabao-rrc/abao_marissa_ui_garden_build_checks',
     tech: ['React', 'TypeScript', 'Husky', 'ESLint', 'Prettier', 'Jest', 'Docker'],
@@ -46,8 +44,7 @@ export const workItems: WorkItem[] = [
 ];
 
 export const skills: SkillsData = {
-  description:
-    'Comfortable across frontend tooling, testing, and Dockerized deployments.',
+  description: 'Comfortable across frontend tooling, testing, and Dockerized deployments.',
   languages: ['TypeScript', 'JavaScript', 'HTML', 'CSS'],
   tools: ['React', 'Jest', 'ESLint', 'Prettier', 'Docker', 'GitHub Actions'],
 };

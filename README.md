@@ -4,12 +4,15 @@ This project is a **React-based portfolio website** built using components inspi
 It showcases coursework completed in the Full Stack Web Development program and is packaged as a Dockerized production build served with **NGINX**.
 
 ## 📌 Project Overview
+
 The portfolio site contains the following sections:
 
 ### 1. **Basic Information**
+
 - Displays name, contact details, and other relevant personal information.
 
 ### 2. **Work**
+
 - Lists selected projects from the program.
 - Each project includes:
   - Title
@@ -19,12 +22,14 @@ The portfolio site contains the following sections:
   - Tech stack used
 
 ### 3. **Skills**
+
 - Summarizes key skills, including:
   - Description of expertise
   - Languages and frameworks
   - Tools used
 
 ### 4. **Resources**
+
 - Shows helpful learning resources, with:
   - Title
   - Icon or image

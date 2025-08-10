@@ -20,7 +20,7 @@ const WorkCard: React.FC<{ item: WorkItem }> = ({ item }) => (
           margin: '0 auto', // center the image
           maxWidth: '100%',
           height: 'auto',
-          maxHeight: 220,       // keep image from being huge
+          maxHeight: 220, // keep image from being huge
           objectFit: 'cover',
           borderRadius: 8,
           marginBottom: 12,

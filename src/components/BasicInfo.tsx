@@ -16,8 +16,16 @@ const BasicInfo: React.FC<Props> = ({ name, role, blurb, email, location, links 
     <p style={{ margin: '0.25rem 0 1rem' }}>{role}</p>
     <p>{blurb}</p>
     <ul style={{ listStyle: 'none', padding: 0, margin: '0.5rem 0' }}>
-      {email && <li><strong>Email:</strong> {email}</li>}
-      {location && <li><strong>Location:</strong> {location}</li>}
+      {email && (
+        <li>
+          <strong>Email:</strong> {email}
+        </li>
+      )}
+      {location && (
+        <li>
+          <strong>Location:</strong> {location}
+        </li>
+      )}
     </ul>
     {links?.length ? (
       <p>
