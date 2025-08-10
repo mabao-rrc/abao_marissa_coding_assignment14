@@ -1,12 +1,5 @@
 # -------------------------------------------------------------
 # GitHub Actions Workflow: Code Quality Checks
-# This workflow runs on every push or pull request to the main
-# branch and ensures that the submitted code passes:
-# - Prettier formatting checks
-# - ESLint linting rules
-# - Unit tests (via npm test)
-# This complements local Husky pre-commit hooks to enforce
-# code quality at both local and remote levels.
 # -------------------------------------------------------------
 
 name: Code Quality Checks
@@ -30,6 +23,14 @@ jobs:
         with:
           node-version: 20
 
+      - name: Cache npm
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
       - name: Install dependencies
         run: npm install
 
@@ -37,7 +38,9 @@ jobs:
         run: npx prettier . --check
 
       - name: Run ESLint
-        run: npx eslint . --ext .js,.jsx,.ts,.tsx
+        run: npx eslint "src/**/*.{js,jsx,ts,tsx}"
 
       - name: Run Tests
+        env:
+          CI: true
         run: npm test -- --watchAll=false
