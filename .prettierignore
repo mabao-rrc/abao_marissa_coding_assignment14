@@ -1,0 +1,14 @@
+# Ignore all installed dependencies (no need to format these)
+node_modules
+
+# Ignore compiled output from builds
+dist
+
+# Ignore alternative build output folder
+build
+
+# Ignore test coverage reports
+coverage
+
+# Ignore all log files
+*.log
