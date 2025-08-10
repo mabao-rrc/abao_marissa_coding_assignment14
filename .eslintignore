@@ -1,0 +1,12 @@
+# Ignore dependencies installed via npm/yarn
+node_modules
+
+# Ignore compiled production build outputs
+dist
+build
+
+# Ignore static Storybook build output
+storybook-static
+
+# Ignore code coverage reports
+coverage
