@@ -16,7 +16,5 @@ test('renders Basic Info heading (name)', () => {
 // -------------------------------------------------------------
 test('renders Work section heading', () => {
   render(<App />);
-  expect(
-    screen.getByRole('heading', { level: 2, name: /^Work$/i })
-  ).toBeInTheDocument();
+  expect(screen.getByRole('heading', { level: 2, name: /^Work$/i })).toBeInTheDocument();
 });
