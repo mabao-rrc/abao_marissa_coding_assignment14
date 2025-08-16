@@ -49,3 +49,13 @@ docker run -p 5575:80 abao_marissa_coding_assignment14
 ### 3. View in your browser
 
 Open: http://localhost:5575
+
+### NOTE: Use these commands to rebuild the portfolio’s Docker image from scratch and run it locally. Helpful if you see old content or 404s on refresh.
+
+### Create a fresh Docker image from the current folder and name it `abao_marissa_coding_assignment14`. `--no-cache` avoids reusing old layers so your latest changes are included.
+docker build --no-cache -t abao_marissa_coding_assignment14 .
+
+### Start a container from that image, auto-remove it when you stop, and map your computer’s port 5575 to the container’s port 80 so the site is at `http://localhost:5575`.
+docker run --rm -p 5575:80 abao_marissa_coding_assignment14
+
+
