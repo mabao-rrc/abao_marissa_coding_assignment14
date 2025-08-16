@@ -51,7 +51,8 @@ export const basicInfo = {
 export const workItems: WorkItem[] = [
   {
     title: 'Coding Assignment 11: Docker File',
-    description: 'Dockerfile and README to run a Create React App locally (served at localhost:7775).',
+    description:
+      'Dockerfile and README to run a Create React App locally (served at localhost:7775).',
     link: 'https://github.com/mabao-rrc/webd-3012-coding-assignments/tree/main/Coding_Assignment_%2311_MAbao',
     tech: ['Docker', 'Create React App', 'Node.js', 'README'],
   },
@@ -99,7 +100,8 @@ export const resources: ResourceItem[] = [
   {
     title: 'Storybook',
     image: '/images/storybook.svg',
-    summary: 'UI development environment used for building and testing components in Assignment 12.',
+    summary:
+      'UI development environment used for building and testing components in Assignment 12.',
     link: 'https://storybook.js.org/',
   },
   {
