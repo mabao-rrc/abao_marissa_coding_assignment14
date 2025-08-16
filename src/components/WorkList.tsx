@@ -14,7 +14,7 @@ const WorkCard: React.FC<{ item: WorkItem }> = ({ item }) => (
       border: '1px solid #eee',
       borderRadius: 12,
       padding: 16,
-      background: '#fafafa',
+      background: '#fefefe',
       boxShadow: '0 1px 3px rgba(0,0,0,0.04)',
 
       // Make the card fill available height inside the grid

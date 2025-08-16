@@ -6,26 +6,26 @@
 
 // Each project/assignment card in the portfolio
 export type WorkItem = {
-  title: string;       // Project name
+  title: string; // Project name
   description: string; // Short summary of the project
-  image?: string;      // Optional image/logo path
-  link: string;        // URL to the GitHub repo or live project
-  tech: string[];      // List of technologies used
+  image?: string; // Optional image/logo path
+  link: string; // URL to the GitHub repo or live project
+  tech: string[]; // List of technologies used
 };
 
 // Skills section data type
 export type SkillsData = {
   description: string; // Short intro about your skills
   languages: string[]; // Programming languages you know
-  tools: string[];     // Frameworks, libraries, and tools you use
+  tools: string[]; // Frameworks, libraries, and tools you use
 };
 
 // Resource links section data type
 export type ResourceItem = {
-  title: string;       // Resource name
-  image?: string;      // Optional icon/logo path
-  summary: string;     // Short description of the resource
-  link: string;        // URL to the resource
+  title: string; // Resource name
+  image?: string; // Optional icon/logo path
+  summary: string; // Short description of the resource
+  link: string; // URL to the resource
 };
 
 // -----------------------------
@@ -34,11 +34,11 @@ export type ResourceItem = {
 
 export const basicInfo = {
   name: "Hi, I'm Marissa Abao!", // Main heading in the Basic Information section
-  role: "Full-Stack Developer",  // Your role/title
+  role: 'Full-Stack Developer', // Your role/title
   blurb:
-    "This portfolio is my final project for WEBD-3012 Business Systems Build and Testing. Over the term, I’ve learned how to keep my code clean, run smooth with automated tests, and set up a build-and-release process so updates can go live quickly and reliably. I love creating interfaces that look great and work even better — and yes, I had fun putting this one together!",
-  email: "mabao@rrc.ca", // Contact email
-  location: "Winnipeg, MB", // Your location
+    'This portfolio is my final project for WEBD-3012 Business Systems Build and Testing. Over the term, I’ve learned how to keep my code clean, run smooth with automated tests, and set up a build-and-release process so updates can go live quickly and reliably. I love creating interfaces that look great and work even better — and yes, I had fun putting this one together!',
+  email: 'mabao@rrc.ca', // Contact email
+  location: 'Winnipeg, MB', // Your location
   links: [
     { label: 'GitHub', url: 'https://github.com/mabao-rrc' }, // GitHub profile link
     { label: 'LinkedIn', url: 'https://www.linkedin.com/in/marissaabao/' }, // LinkedIn profile link
@@ -51,8 +51,7 @@ export const basicInfo = {
 export const workItems: WorkItem[] = [
   {
     title: 'Coding Assignment 11: Docker File',
-    description:
-      'Dockerfile and README to run a Create React App locally (served at localhost:7775).',
+    description: 'Dockerfile and README to run a Create React App locally (served at localhost:7775).',
     link: 'https://github.com/mabao-rrc/webd-3012-coding-assignments/tree/main/Coding_Assignment_%2311_MAbao',
     tech: ['Docker', 'Create React App', 'Node.js', 'README'],
   },
@@ -65,8 +64,7 @@ export const workItems: WorkItem[] = [
   },
   {
     title: 'Coding Assignment 13: UC Component Library',
-    description:
-      'React + TypeScript library with Husky pre-commit checks and GitHub Actions CI.',
+    description: 'React + TypeScript library with Husky pre-commit checks and GitHub Actions CI.',
     link: 'https://github.com/mabao-rrc/abao_marissa_ui_garden_build_checks',
     tech: ['React', 'TypeScript', 'Husky', 'ESLint', 'Prettier', 'Jest', 'Docker'],
   },
@@ -76,7 +74,8 @@ export const workItems: WorkItem[] = [
 // Skills Section
 // -----------------------------
 export const skills: SkillsData = {
-  description: 'I build modern frontend applications, add automated tests for reliability, and use Docker for smooth deployments. With tools like ESLint, Prettier, and GitHub Actions, I keep code clean, maintainable, and deployment-ready through efficient CI/CD pipelines.',
+  description:
+    'I build modern frontend applications, add automated tests for reliability, and use Docker for smooth deployments. With tools like ESLint, Prettier, and GitHub Actions, I keep code clean, maintainable, and deployment-ready through efficient CI/CD pipelines.',
   languages: ['TypeScript', 'JavaScript', 'HTML', 'CSS'],
   tools: ['React', 'Jest', 'ESLint', 'Prettier', 'Docker', 'GitHub Actions'],
 };
